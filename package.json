@@ -1,0 +1,1 @@
+{"name":"insight-health-partners","private":true,"scripts":{"dev":"next dev","build":"next build"},"dependencies":{"@tailwindcss/postcss":"latest","lucide-react":"latest","next":"latest","react":"latest","react-dom":"latest","tailwindcss":"latest"},"devDependencies":{},"pnpm":{"onlyBuiltDependencies":["sharp"]}}
