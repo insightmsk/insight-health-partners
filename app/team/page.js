@@ -27,7 +27,7 @@ export default function Team(){
           <div className="heading">
             <h2>Meet the founders</h2>
             <p>
-              Together, our founders bring more than 50 years of NHS experience.
+              Together, our founders bring more than 80 years of NHS experience.
               Each is a qualified musculoskeletal sonographer working in Advanced Practice
               or Consultant-level clinical roles.
             </p>
