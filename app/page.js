@@ -8,8 +8,8 @@ const team=[
   ["GE","Gareth Evans","Co-Founder"],
   ["MP","Mikesh Patel","Co-Founder"],
   ["ML","Maxence Legout","Co-Founder"],
-  ["PW","Paul Watson","Advanced Practice Physiotherapist"],
-  ["DT","David Toy","Advanced Practice Physiotherapist"]
+  ["PW","Paul Watson","Co-Founder"],
+  ["DT","David Toy","Co-Founder"]
 ];
 
 const repository=process.env.GITHUB_REPOSITORY?.split("/")[1]??"";

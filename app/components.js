@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const nav=[["Who we are","/#who-we-are"],["Our services","/#our-services"],["Careers","/#careers"],["Get in touch","/#get-in-touch"]];
 
-function ProbeLogo(){return <span className="probe-logo" aria-hidden="true"><span className="probe-waves"><i/><i/><i/></span><span className="probe-device"><span className="probe-slot"/></span><span className="probe-base"/></span>}
+function ProbeLogo(){return <span className="probe-logo" aria-hidden="true"><span className="probe-waves"><i/><i/><i/></span><span className="probe-device"><span className="probe-slot"/></span></span>}
 
 export function Header(){const[open,setOpen]=useState(false);return <nav className="nav" aria-label="Main navigation"><div className="shell navin"><Link className="brand" href="/#home" aria-label="Insight Health Partners — return to the top"><ProbeLogo/><span>Insight Health<br/>Partners</span></Link><button className="menu" aria-label="Toggle navigation" aria-expanded={open} onClick={()=>setOpen(!open)}>☰</button><div className={"links "+(open?"open":"")}>{nav.map(([label,href])=><Link key={href} href={href} onClick={()=>setOpen(false)}>{label}</Link>)}</div></div></nav>}
 
