@@ -34,3 +34,11 @@
 .linkedin-placeholder span{font-size:14px;font-weight:900}
 .linkedin-placeholder small{color:#9fb7c5;font-size:11px}
 .linkedin-placeholder:hover,.linkedin-placeholder:focus-visible{color:white;opacity:1;transform:translateY(-1px)}
+
+/* Individual founder profiles */
+.person-copy{padding:28px 23px;min-height:100%;display:flex;flex-direction:column}
+.person-points{margin-top:13px}
+.person-points li{font-size:14px;padding-top:8px;padding-bottom:8px}
+.person-linkedin{display:inline-flex;width:28px;height:40px;margin-top:auto;padding-top:12px;color:#0878b9}
+.person-linkedin svg{width:28px;height:28px;fill:currentColor}
+.person-linkedin:hover,.person-linkedin:focus-visible{color:#005eb8}
