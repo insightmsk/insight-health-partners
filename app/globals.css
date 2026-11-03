@@ -42,3 +42,11 @@
 .person-linkedin{display:inline-flex;width:28px;height:40px;margin-top:auto;padding-top:12px;color:#0878b9}
 .person-linkedin svg{width:28px;height:28px;fill:currentColor}
 .person-linkedin:hover,.person-linkedin:focus-visible{color:#005eb8}
+
+/* Secure form submission states */
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+.form-status{padding:13px 15px;border-radius:8px;font-size:14px;line-height:1.5;margin:0}
+.form-status.pending{background:#eef5fa;color:var(--navy)}
+.form-status.success{background:#e6f6ef;color:#075f45;border:1px solid #a8ddca}
+.form-status.error{background:#fff0f0;color:#8a1f1f;border:1px solid #e7b7b7}
+.form button:disabled{opacity:.65;cursor:wait}
