@@ -24,7 +24,7 @@ async function submitForm(event,setStatus){
     const data=await response.json().catch(()=>({}));
     if(!response.ok||data.success===false)throw new Error("Submission failed");
     form.reset();
-    setStatus({type:"success",message:"Thank you. Your information has been sent to Insight Health Partners Ltd."});
+    setStatus({type:"success",message:"Thank you. Your information has been sent to Insight Health Partners."});
   }catch{
     setStatus({type:"error",message:"We could not send your information. Please try again shortly."});
   }
@@ -34,7 +34,7 @@ export function CareerForm(){
   const[status,setStatus]=useState({type:"",message:""});
   return <form className="form panel" method="POST" encType="multipart/form-data" onSubmit={event=>submitForm(event,setStatus)}>
     <h3>Register your interest</h3>
-    <input type="hidden" name="_subject" value="New careers enquiry — Insight Health Partners Ltd"/>
+    <input type="hidden" name="_subject" value="New careers enquiry — Insight Health Partners"/>
     <input type="hidden" name="_template" value="table"/>
     <input className="form-honeypot" type="text" name="_honey" tabIndex="-1" autoComplete="off" aria-hidden="true"/>
     <label>Full name<input name="name" required autoComplete="name"/></label>
@@ -44,7 +44,7 @@ export function CareerForm(){
     <label>Areas of interest<select name="interest" defaultValue="" required><option value="" disabled>Select an area</option><option>Diagnostic ultrasound</option><option>Community MSK</option><option>Radiology</option><option>Ultrasound-guided procedures</option><option>Service leadership</option><option>Other</option></select></label>
     <label>Attach CV <span>(PDF or Word, maximum 10 MB)</span><input name="attachment" type="file" accept=".pdf,.doc,.docx"/></label>
     <label>Short message<textarea name="message"/></label>
-    <label className="consent"><input name="privacy_consent" value="Confirmed" type="checkbox" required/> <span>I have read the <Link href="/privacy">privacy policy</Link> and consent to Insight Health Partners Ltd using my details to respond to this expression of interest.</span></label>
+    <label className="consent"><input name="privacy_consent" value="Confirmed" type="checkbox" required/> <span>I have read the <Link href="/privacy">privacy policy</Link> and consent to Insight Health Partners using my details to respond to this expression of interest.</span></label>
     <button className="btn" type="submit" disabled={status.type==="pending"}>{status.type==="pending"?"Sending…":"Submit interest"}</button>
     <StatusMessage status={status}/>
     <small>Do not include patient information or special-category personal data in your CV or message.</small>
@@ -55,7 +55,7 @@ export function ContactForm(){
   const[status,setStatus]=useState({type:"",message:""});
   return <form className="form panel" method="POST" onSubmit={event=>submitForm(event,setStatus)}>
     <h3>Send us a message</h3>
-    <input type="hidden" name="_subject" value="New website enquiry — Insight Health Partners Ltd"/>
+    <input type="hidden" name="_subject" value="New website enquiry — Insight Health Partners"/>
     <input type="hidden" name="_template" value="table"/>
     <input className="form-honeypot" type="text" name="_honey" tabIndex="-1" autoComplete="off" aria-hidden="true"/>
     <label>Full name<input name="name" required autoComplete="name"/></label>
