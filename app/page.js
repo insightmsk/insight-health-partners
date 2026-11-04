@@ -7,8 +7,8 @@ const team=[
   {name:"Khaled Barick",points:["NHS clinical leadership experience","Independent prescriber"],linkedin:"https://uk.linkedin.com/in/khaled-barick-952506244"},
   {name:"Mikesh Patel",points:["NHS clinical leadership experience","CQC advisor"],linkedin:null},
   {name:"Maxence Legout",points:["Independent prescriber","Interventional NHS radiology experience","Teaches MSK ultrasound and ultrasound-guided injections"]},
-  {name:"Paul Watson",points:["Independent prescriber","Interventional NHS radiology experience","Teaches MSK ultrasound and ultrasound-guided injections"]},
-  {name:"David Toy",points:["Independent prescriber","Interventional NHS radiology experience","Teaches MSK ultrasound and ultrasound-guided injections"]}
+  {name:"Paul Watson",points:["Independent prescriber","Interventional NHS radiology experience","Teaches MSK ultrasound and ultrasound-guided injections"],linkedin:"https://uk.linkedin.com/in/paul-watson-b2840910b"},
+  {name:"David Toy",points:["Independent prescriber","Interventional NHS radiology experience","Teaches MSK ultrasound and ultrasound-guided injections"],linkedin:"https://uk.linkedin.com/in/david-toy-4ab71454"}
 ];
 
 function LinkedInIcon({name,href}){return <a className="person-linkedin" href={href} target="_blank" rel="noopener noreferrer" aria-label={`View ${name} on LinkedIn`}><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5.3 7.8H1.7V22h3.6V7.8ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.3 13.9c0-4.3-2.3-6.4-5.4-6.4a4.7 4.7 0 0 0-4.2 2.3v-2H9.2V22h3.6v-7c0-1.8.3-3.6 2.6-3.6s2.3 2.1 2.3 3.7V22h3.6l1-8.1Z"/></svg></a>}
